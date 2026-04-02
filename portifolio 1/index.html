@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felipe Romio - Desenvolvedor Backend</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Felipe<span>.</span>Romio <sub>dev backend</sub></div>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#projects">Projetos</a></li>
+    <li><a href="#tech">Stack</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    Disponível
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="globe-canvas"></canvas>
+
+  <div class="location-ping" id="locationPing">
+    <div class="ping-dot"></div>
+    <div class="ping-label">📍 Garibaldi, RS</div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-prompt">backend_developer.init()</div>
+    <h1 class="hero-name">
+      Felipe
+      <span class="last">Romio</span>
+    </h1>
+    <p class="hero-role">Desenvolvedor Backend · C# e Node.js</p>
+    <p class="hero-location">📍 Garibaldi, Rio Grande do Sul - Brasil</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">Ver projetos →</a>
+      <a href="#contact" class="btn btn-ghost">Falar comigo</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    role
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M8 3v10M4 9l4 4 4-4" stroke="#4a6060" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="about" class="container" style="padding-top:8rem">
+  <div class="section-eyebrow">sobre mim</div>
+  <div class="about-grid reveal">
+    <div class="avatar-wrap">
+      <div class="avatar-box">
+        👨‍💻
+        <div class="avatar-badge">DISPONÍVEL PARA OPORTUNIDADES</div>
+      </div>
+    </div>
+    <div class="about-text">
+      <h3>Olá, eu sou o <em>Felipe Romio</em> 👋</h3>
+      <p>
+        Desenvolvedor backend júnior apaixonado por construir sistemas,
+        APIs e soluções que realmente funcionam. Trabalho com
+        <strong style="color:var(--accent)">C# (.NET)</strong> e
+        <strong style="color:var(--accent)">Node.js</strong>.
+      </p>
+      <p>
+        Sou de Garibaldi, RS, uma cidade pequena com gente grande. Estou
+        constantemente aprendendo e buscando minha primeira grande oportunidade
+        para crescer dentro de um time de tecnologia.
+      </p>
+      <p>
+        Tenho interesse em desenvolvimento de sistemas, bancos de dados,
+        integrações de APIs e código limpo que qualquer pessoa consiga manter.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">Jr</span>
+          <span class="stat-label">Nível</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Stacks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Dedicação</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJETOS -->
+<section id="projects" class="container">
+  <div class="section-eyebrow">projetos</div>
+  <h2 class="section-title reveal">O que eu já construí</h2>
+  <p class="section-sub reveal">Projetos que desenvolvi para praticar e demonstrar minha evolução como desenvolvedor.</p>
+
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0a1a10,#0d2615);">
+        🔌
+        <span class="lang-badge">NodeJS</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">NodeJS</span><span class="tag">Express</span><span class="tag">JWT</span><span class="tag">MongoDB</span></div>
+        <div class="project-title">API de Usuários e Posts</div>
+        <p class="project-desc">API completa com autenticação JWT, CRUD, validações e documentação Swagger. Arquitetura em camadas seguindo boas práticas.</p>
+        <div class="project-links">
+          <a href="https://github.com/feliperomio/API_Acervo" target="_blank" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0a1520,#0d1a28);">
+        🚀
+        <span class="lang-badge">C#/.NET</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">C#</span><span class="tag">API ViaCep</span></div>
+        <div class="project-title">Consulta de Endereço por CEP (API ViaCEP)</div>
+        <p class="project-desc">Sistema de consulta de endereços através do CEP utilizando a API ViaCEP.</p>
+        <div class="project-links">
+          <a href="https://github.com/feliperomio/Busca-de-enderecos" target="_blank" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1a100a,#281508);">
+        📦
+        <span class="lang-badge">Node.js</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags"><span class="tag">C#/.NET</span><span class="tag">MySQL</span><span class="tag">WinForms</span></div>
+        <div class="project-title">Sistema de Cadastro de Pessoas</div>
+        <p class="project-desc">Serviço de gerenciamento de pedidos com filas, validação de estoque, integração com notificações e conteinerização com Docker.</p>
+        <div class="project-links">
+          <a href="https://github.com/feliperomio/CRUD-de-Pessoas" target="_blank" class="project-link">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TECNOLOGIAS -->
+<section id="tech" class="container">
+  <div class="section-eyebrow">stack</div>
+  <h2 class="section-title reveal">Tecnologias</h2>
+  <p class="section-sub reveal">O que uso para construir backends sólidos e escaláveis.</p>
+
+  <div class="tech-categories reveal">
+    <div>
+      <div class="tech-category-label">Linguagens principais</div>
+      <div class="tech-row">
+        <div class="tech-chip main"><span class="ti">🔷</span> C#</div>
+        <div class="tech-chip main"><span class="ti">🟨</span> Automação Py Básica</div>
+      </div>
+    </div>
+    <div>
+      <div class="tech-category-label">Frameworks e ferramentas</div>
+      <div class="tech-row">
+        <div class="tech-chip"><span class="ti">⚙️</span> .NET</div>
+        <div class="tech-chip"><span class="ti">🚂</span> Express.js</div>
+        <div class="tech-chip"><span class="ti">📋</span> Swagger</div>
+        <div class="tech-chip"><span class="ti">🔐</span> JWT Auth</div>
+        <div class="tech-chip"><span class="ti">🔀</span> Git / GitHub</div>
+      </div>
+    </div>
+    <div>
+      <div class="tech-category-label">Bancos de dados</div>
+      <div class="tech-row">
+        <div class="tech-chip"><span class="ti">🐘</span> MySQL</div>
+        <div class="tech-chip"><span class="ti">🍃</span> MongoDB</div>
+      </div>
+    </div>
+    <div>
+      <div class="tech-category-label">Aprendendo</div>
+      <div class="tech-row">
+        <div class="tech-chip"><span class="ti">☁️</span> API REST</div>
+        <div class="tech-chip"><span class="ti">🏗️</span> Clean Architecture</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTATO -->
+<section id="contact" class="container">
+  <div class="section-eyebrow">contato</div>
+  <h2 class="section-title reveal">Vamos conversar?</h2>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <p>
+        Estou buscando minha primeira oportunidade profissional como desenvolvedor.
+        Se você tem uma vaga, projeto ou quer bater um papo sobre tecnologia, me manda uma mensagem.
+      </p>
+      <div class="contact-links">
+        <a href="https://wa.me/5554999883288" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💬</span>
+          <div class="contact-link-info">
+            <strong>WhatsApp</strong>
+            <!-- EDITE: troque pelo seu número -->
+            <span>+55 (54) 99988-3288</span>
+          </div>
+        </a>
+        <a href="https://github.com/feliperomio" target="_blank" class="contact-link">
+          <span class="contact-link-icon">🐙</span>
+          <div class="contact-link-info">
+            <strong>GitHub</strong>
+            <!-- EDITE: troque pelo seu usuário -->
+            <span>github.com/feliperomio</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/felipe-romio-485868186" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💼</span>
+          <div class="contact-link-info">
+            <strong>LinkedIn</strong>
+            <!-- EDITE: troque pelo seu usuário -->
+            <span>linkedin.com/in/felipe-romio</span>
+          </div>
+        </a>
+        <a href="mailto:feliperomio50@gmail.com" class="contact-link">
+          <span class="contact-link-icon">✉️</span>
+          <div class="contact-link-info">
+            <strong>E-mail</strong>
+            <!-- EDITE: troque pelo seu e-mail -->
+            <span>feliperomio50@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label>Seu nome</label>
+        <input type="text" placeholder="Maria da Silva">
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" placeholder="maria@empresa.com">
+      </div>
+      <div class="form-group">
+        <label>Assunto</label>
+        <input type="text" placeholder="Oportunidade de vaga / Projeto / ...">
+      </div>
+      <div class="form-group">
+        <label>Mensagem</label>
+        <textarea placeholder="Olá Felipe! Vi seu portfólio e gostaria de conversar..."></textarea>
+      </div>
+      <button class="btn btn-primary" onclick="sendMsg()" style="width:100%;justify-content:center;">
+        Enviar mensagem →
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+  <p>Feito por <span class="accent">Felipe Romio</span> · Garibaldi, RS · 2026</p>
+  <p style="margin-top:0.4rem;font-size:0.58rem;opacity:0.6">Desenvolvedor Backend · C# · Node.js · Disponível para oportunidades</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
